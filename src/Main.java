@@ -7,6 +7,9 @@ public class Main {
             System.out.println("Marque de la voiture electrique : " + voitureElectrique.getMarque());
             System.out.println("Nombre de pneus de la voiture electrique : " + voitureElectrique.getListePneus().size());
             System.out.println("Marque du pneu ajouté : " + voitureElectrique.getListePneus().get(0).getMarque());
+            voitureElectrique.Kilometrage();
+            voitureElectrique.NombreChevauxFiscaux();
+            voitureElectrique.AutonomieMax();
         } catch (IllegalArgumentException e) {
             System.out.println("Erreur : " + e.getMessage());
         }
@@ -18,6 +21,9 @@ public class Main {
             System.out.println("Marque de la voiture Hybride : " + voitureHybride.getMarque());
             System.out.println("Nombre de pneus de la voiture hybride : " + voitureHybride.getListePneus().size());
             System.out.println("Marque du pneu ajouté : " + voitureHybride.getListePneus().get(0).getMarque());
+            voitureHybride.Kilometrage();
+            voitureHybride.NombreChevauxFiscaux();
+            voitureHybride.AutonomieMax();
         } catch (IllegalArgumentException e) {
             System.out.println("Erreur : " + e.getMessage());
 
@@ -34,6 +40,9 @@ public class Main {
             System.out.println("Marque de la voiture diesel : " + voitureDiesel.getMarque());
             System.out.println("Nombre de pneus de la voiture diesel : " + voitureDiesel.getListePneus().size());
             System.out.println("Marque du pneu ajouté : " + voitureDiesel.getListePneus().get(0).getMarque());
+            voitureDiesel.Kilometrage();
+            voitureDiesel.NombreChevauxFiscaux();
+            voitureDiesel.AutonomieMax();
         }catch (IllegalArgumentException e) {
             System.out.println("Erreur : "+ e.getMessage());
         }
@@ -48,6 +57,9 @@ public class Main {
             System.out.println("Marque de la voiture essence : " + voitureEssence.getMarque());
             System.out.println("Nombre de pneus de la voiture essence : " + voitureEssence.getListePneus().size());
             System.out.println("Marque du pneu ajouté : " + voitureEssence.getListePneus().get(0).getMarque());
+            voitureEssence.Kilometrage();
+            voitureEssence.NombreChevauxFiscaux();
+            voitureEssence.AutonomieMax();
         }catch (IllegalArgumentException e) {
             System.out.println("Erreur : "+ e.getMessage());
         }

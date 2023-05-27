@@ -19,28 +19,55 @@ public abstract class Vehicule {
         this.nombreChevauxFiscaux = nombreChevauxFiscaux;
     }
 
-    public String getMarque() {
-        return marque;
+    public int getAutonomieMax() {
+        return autonomieMax;
+    }
+
+    public int getNombreChevauxFiscaux() {
+        return nombreChevauxFiscaux;
     }
 
     public int getKilometrage() {
         return kilometrage;
     }
 
+    public String getMarque() {
+        return marque;
+    }
+
+    public void Kilometrage() {
+        int min = 20000; // Minimum value of range
+        int max = 400000; // Maximum value of range
+        // Generate random int value from min to max
+        int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+        // Printing the generated random numbers
+        System.out.println("Kilometrage de la voiture "+":"+random_int);
+    }
+
     public String getModele() {
         return modele;
     }
 
-    public int getAutonomieMax() {
-        return autonomieMax;
+    public void AutonomieMax() {
+        int min = 10; // Minimum value of range
+        int max = 800; // Maximum value of range
+        // Generate random int value from min to max
+        int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+        // Printing the generated random numbers
+        System.out.println("Autonomie de la voiture en KM"+":"+random_int);
     }
 
     public List<Pneu> getListePneus() {
         return listePneus;
     }
 
-    public int getNombreChevauxFiscaux() {
-        return nombreChevauxFiscaux;
+    public void NombreChevauxFiscaux() {
+        int min = 2; // Minimum value of range
+        int max = 100; // Maximum value of range
+        // Generate random int value from min to max
+        int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+        // Printing the generated random numbers
+        System.out.println("Nombre de chevaux Fiscaux de la voiture "+":"+random_int);
     }
 
     public void addPneu(Pneu pneu) {
