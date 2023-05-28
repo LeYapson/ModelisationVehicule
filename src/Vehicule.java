@@ -36,7 +36,7 @@ public abstract class Vehicule {
     }
 
     public void Kilometrage() {
-        int min = 20000; // Minimum value of range
+        int min = 0; // Minimum value of range
         int max = 400000; // Maximum value of range
         // Generate random int value from min to max
         int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
@@ -63,7 +63,7 @@ public abstract class Vehicule {
 
     public void NombreChevauxFiscaux() {
         int min = 2; // Minimum value of range
-        int max = 100; // Maximum value of range
+        int max = 50; // Maximum value of range
         // Generate random int value from min to max
         int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
         // Printing the generated random numbers
