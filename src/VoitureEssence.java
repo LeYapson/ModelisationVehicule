@@ -3,6 +3,8 @@ public class VoitureEssence extends Vehicule {
     public VoitureEssence(String marque, int kilometrage, String modele, int nombreChevauxFiscaux) {
         super(marque, kilometrage, modele, 1000, nombreChevauxFiscaux);
     }
+
+    // override de l'autonomie max du véhicule selon ses restrictions
     @Override
     public void AutonomieMax() {
         int min = 10; // Minimum value of range

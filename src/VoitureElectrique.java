@@ -4,6 +4,7 @@ public class VoitureElectrique extends Vehicule {
         super(marque, kilometrage, modele, 500, nombreChevauxFiscaux);
     }
 
+    // override de addPneu du véhicule selon ses restrictions
     @Override
     public void addPneu(Pneu pneu) {
         if (pneu instanceof PneuHiver) {
@@ -11,6 +12,7 @@ public class VoitureElectrique extends Vehicule {
         }
         super.addPneu(pneu);
     }
+    // override de l'autonomie max du véhicule selon ses restrictions
     @Override
     public void AutonomieMax() {
         int min = 10; // Minimum value of range

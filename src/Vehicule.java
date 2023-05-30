@@ -35,6 +35,7 @@ public abstract class Vehicule {
         return marque;
     }
 
+    // génération du kilométrage de manière aléatoire
     public void Kilometrage() {
         int min = 0; // Minimum value of range
         int max = 400000; // Maximum value of range
@@ -48,6 +49,7 @@ public abstract class Vehicule {
         return modele;
     }
 
+    // génération de l'autonomie max du véhicule aléatoirement
     public void AutonomieMax() {
         int min = 10; // Minimum value of range
         int max = 800; // Maximum value of range
@@ -61,6 +63,7 @@ public abstract class Vehicule {
         return listePneus;
     }
 
+    // génération des Chevaux fiscaux du véhicule aléatoirement
     public void NombreChevauxFiscaux() {
         int min = 2; // Minimum value of range
         int max = 50; // Maximum value of range
@@ -73,6 +76,8 @@ public abstract class Vehicule {
     public void addPneu(Pneu pneu) {
         listePneus.add(pneu);
     }
+
+    //Cette méthode vérifie si le véhicule a bien 4 roues, renvoie une erreur si le véhicule n'a pas exactement 4 roues
     public void have4Wheels() {
         if(listePneus.size() != 4) {
             throw new IllegalArgumentException("Une voiture doit obligatoirement avoir 4 roues");

@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // test sur un véhicule électrique
         try {
             VoitureElectrique voitureElectrique = new VoitureElectrique("Tesla", 0, "Model S", 150);
             voitureElectrique.addPneu(new PneuEte("Michelin", 205, 95, "01/2023", 0.6));
@@ -14,7 +15,7 @@ public class Main {
         } catch (IllegalArgumentException e) {
             System.out.println("Erreur : " + e.getMessage());
         }
-
+        // test sur un véhicule hybride
         try {
             VoitureHybride voitureHybride = new VoitureHybride("Toyota", 50000, "Prius", 100);
             voitureHybride.addPneu(new PneuTouteSaison("Continental", 195, 91, "01/2022", 0.3));
@@ -31,7 +32,7 @@ public class Main {
 
         }
 
-        // Création d'autres instances de véhicules et de pneus pour les tests
+        // test sur un véhicule diesel
         try {
             VoitureDiesel voitureDiesel = new VoitureDiesel("Volkswagen", 100000, "Golf", 120);
             voitureDiesel.addPneu(new PneuEte("Michelin", 205, 95, "01/2023", 0.6));  // Ajout d'un pneu été à une voiture diesel
@@ -49,7 +50,7 @@ public class Main {
             System.out.println("Erreur : "+ e.getMessage());
         }
 
-        // Création d'autres instances de véhicules et de pneus pour les tests
+        // test sur un véhicule essence
         try {
             VoitureEssence voitureEssence = new VoitureEssence("Ford", 80000, "Focus", 110);
             voitureEssence.addPneu(new PneuTouteSaison("Continental", 195, 91, "01/2022", 0.3));
