@@ -1,3 +1,9 @@
+# Auteurs
+
+- Théau YAPI
+- Lukas TABOGA
+
+
 # Modélisation des véhicules
 
 Ce dépôt contient une modélisation de différents types de véhicules en respectant les contraintes et les spécifications suivantes :
